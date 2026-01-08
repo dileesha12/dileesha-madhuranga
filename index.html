@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dileesha | Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Patrick+Hand&family=Fredoka:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        dark: '#0f172a',
+                        light: '#f1f5f9',
+                        brand: {
+                            purple: '#A855F7',
+                            dark: '#050505',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        hand: ['Patrick Hand', 'cursive'],
+                        display: ['Fredoka', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-[#050505] text-slate-400 antialiased selection:bg-purple-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav
+        class="bg-[#050505]/80 backdrop-blur-md sticky top-0 z-50 px-[5%] py-4 flex justify-between items-center shadow-sm border-b border-slate-800/50">
+        <div class="text-2xl font-extrabold text-white tracking-tight font-display">Dileesha.Dev</div>
+
+        <div class="hidden md:flex items-center space-x-8">
+            <a href="#projects"
+                class="text-slate-300 font-medium text-[0.95rem] hover:text-purple-400 transition-colors">Portfolio</a>
+            <a href="#skills"
+                class="text-slate-300 font-medium text-[0.95rem] hover:text-purple-400 transition-colors">Tech Stack</a>
+            <a href="mailto:dileeshamadhuranga@gmail.com"
+                class="bg-slate-900 text-white px-6 py-2.5 rounded-full font-medium hover:bg-purple-600 transition shadow-lg shadow-purple-600/20">Hire
+                Me</a>
+        </div>
+
+        <button class="md:hidden text-white text-xl">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Hero Section (Dark Mode Design) -->
+    <section class="bg-[#050505] pt-20 pb-28 px-5 relative overflow-hidden">
+
+        <!-- Purple Glow Effect -->
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-900/40 rounded-full blur-[120px] pointer-events-none">
+        </div>
+
+        <div class="max-w-5xl mx-auto relative z-10 grid md:grid-cols-2 gap-10 items-center">
+
+            <!-- Left: Text Content -->
+            <div class="text-center md:text-left order-2 md:order-1">
+                <!-- Creative "Judge a book" text element -->
+                <div class="mb-6 relative inline-block">
+                    <p class="text-white text-3xl md:text-4xl font-display leading-tight">
+                        A Developer who <br>
+                        Judges a user flow <br>
+                        by its <span class="relative inline-block text-purple-400">
+                            Architecture...
+                            <!-- Oval circle annotation -->
+                            <svg class="absolute -inset-2 w-[110%] h-[120%] text-purple-600 opacity-60 pointer-events-none"
+                                viewBox="0 0 100 100" preserveAspectRatio="none">
+                                <ellipse cx="50" cy="50" rx="48" ry="40" stroke="currentColor" stroke-width="2"
+                                    fill="none" transform="rotate(-5)"></ellipse>
+                            </svg>
+                        </span>
+                    </p>
+                    <p class="text-slate-500 text-xs mt-2 font-mono tracking-wide">Because if the code structure doesn't
+                        impress you what else can?</p>
+                </div>
+
+                <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 font-display mt-8">
+                    I'm a <br> <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">Software
+                        Developer.</span>
+                </h1>
+
+                <div class="flex flex-wrap gap-3 items-center justify-center md:justify-start text-slate-400 mb-8">
+                    <span>Currently, I'm a Freelancer at</span>
+                    <span
+                        class="bg-blue-900/30 text-blue-400 px-3 py-1 rounded-full text-sm font-semibold flex items-center gap-2 border border-blue-800/50">
+                        <i class="fas fa-code"></i> AppZoneLK
+                    </span>
+                </div>
+
+                <p class="text-slate-400 text-lg leading-relaxed max-w-lg mx-auto md:mx-0">
+                    A self-taught Full Stack developer. I make meaningful and high-performance digital products that
+                    solve real-world problems.
+                </p>
+            </div>
+
+            <!-- Right: 3D Avatar -->
+            <div class="relative order-1 md:order-2 flex justify-center">
+
+                <!-- Handwritten Arrow & Label -->
+                <div class="absolute -top-10 -left-6 md:-left-12 z-20 hidden md:block">
+                    <span
+                        class="font-hand text-purple-300 text-2xl -rotate-12 block transform translate-x-8 translate-y-4">Hello!
+                        I Am Dileesha</span>
+                    <svg class="w-16 h-16 text-slate-500 rotate-90 scale-x-[-1]" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M16 17l-4 4m0 0l-4-4m4 4V3"></path>
+                    </svg>
+                </div>
+
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-b from-purple-500/20 to-transparent rounded-full blur-2xl transform translate-y-4">
+                    </div>
+                    <!-- 3D Avatar Image -->
+                    <img src="https://cdn3d.iconscout.com/3d/premium/thumb/web-developer-4506461-3738664.png"
+                        alt="3D Avatar"
+                        class="relative z-10 w-full h-full object-contain drop-shadow-2xl animate-float">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Tech Marquee (Blended into Hero) -->
+        <div class="mt-20 border-t border-slate-800/50 pt-10">
+            <div
+                class="flex flex-wrap justify-center gap-6 opacity-60 grayscale hover:grayscale-0 transition duration-500">
+                <i class="fab fa-react text-3xl text-blue-400"></i>
+                <i class="fab fa-flutter text-3xl text-blue-400"></i>
+                <i class="fab fa-node text-3xl text-green-500"></i>
+                <i class="fab fa-aws text-3xl text-orange-500"></i>
+                <i class="fab fa-docker text-3xl text-blue-500"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Original Services Tag (Optional - Removing or keeping? Keeping it simple inside Hero or Projects) -->
+    <!-- I'll remove the old services tag block since it clashes with the new design, 
+         or I might move it to the About/Skills section if needed later. 
+         For now, the marquee above replaces it nicely. -->
+
+    <!-- Projects Section -->
+    <section class="bg-[#050505] py-24 px-[5%] relative z-10" id="projects">
+
+        <!-- Background Gradient Glow (Subtle separation) -->
+        <div
+            class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-purple-900/50 to-transparent">
+        </div>
+
+        <div class="max-w-[1300px] mx-auto">
+            <div class="mb-16 text-center md:text-left">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4 font-display">Featured Projects</h2>
+                <p class="text-slate-400 text-lg max-w-2xl">Some of my recent work in mobile and web development.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                <!-- Card 1: Viyadam Potha -->
+                <div
+                    class="group relative bg-slate-900 rounded-3xl p-1 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-purple-900/20 hover:-translate-y-1">
+                    <!-- Gradient Border/Background -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-indigo-500/20 via-purple-500/10 to-transparent opacity-100 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-r from-purple-900/40 to-slate-900/90 rounded-3xl"></div>
+
+                    <div
+                        class="relative p-8 md:p-10 flex flex-col md:flex-row items-center md:items-start gap-8 h-full">
+                        <!-- 3D Icon -->
+                        <div class="w-32 h-32 flex-shrink-0 relative">
+                            <div class="absolute inset-0 bg-purple-500/30 blur-2xl rounded-full"></div>
+                            <img src="images/viyadam_potha.png" alt="Viyadam Potha Icon"
+                                class="relative z-10 w-full h-full object-contain animate-float"
+                                style="animation-delay: 0s;">
+                        </div>
+
+                        <div class="flex-1 text-center md:text-left">
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-3 font-display">Viyadam Potha</h3>
+                            <p class="text-slate-400 text-sm md:text-base leading-relaxed mb-6">
+                                A comprehensive Expense Tracking App available on Google Play. Helps users manage daily
+                                finances with analytics and cloud sync.
+                            </p>
+                            <a href="https://appzonelk.com/pages/portfolio/index.html"
+                                class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-purple-500/30 text-purple-300 text-sm font-semibold hover:bg-purple-500/10 hover:border-purple-400 transition-all group-hover:gap-3">
+                                VIEW PROJECT <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Game Master -->
+                <div
+                    class="group relative bg-slate-900 rounded-3xl p-1 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-purple-900/20 hover:-translate-y-1">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-indigo-500/20 via-purple-500/10 to-transparent opacity-100">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-r from-indigo-900/40 to-slate-900/90 rounded-3xl"></div>
+
+                    <div
+                        class="relative p-8 md:p-10 flex flex-col md:flex-row items-center md:items-start gap-8 h-full">
+                        <div class="w-32 h-32 flex-shrink-0 relative">
+                            <div class="absolute inset-0 bg-indigo-500/30 blur-2xl rounded-full"></div>
+                            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/game-controller-4035925-3342603.png"
+                                alt="Game Icon" class="relative z-10 w-full h-full object-contain animate-float"
+                                style="animation-delay: 1s;">
+                        </div>
+
+                        <div class="flex-1 text-center md:text-left">
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-3 font-display">Game Master</h3>
+                            <p class="text-slate-400 text-sm md:text-base leading-relaxed mb-6">
+                                An all-in-one gaming hub featuring Tic Tac Toe, Word Search, and Hangman. Built with
+                                complex game logic.
+                            </p>
+                            <a href="https://appzonelk.com/pages/portfolio/index.html"
+                                class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-indigo-500/30 text-indigo-300 text-sm font-semibold hover:bg-indigo-500/10 hover:border-indigo-400 transition-all group-hover:gap-3">
+                                VIEW PROJECT <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: AppZoneLK -->
+                <div
+                    class="group relative bg-slate-900 rounded-3xl p-1 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-purple-900/20 hover:-translate-y-1">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-purple-500/10 to-transparent opacity-100">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-900/40 to-slate-900/90 rounded-3xl"></div>
+
+                    <div
+                        class="relative p-8 md:p-10 flex flex-col md:flex-row items-center md:items-start gap-8 h-full">
+                        <div class="w-32 h-32 flex-shrink-0 relative">
+                            <div class="absolute inset-0 bg-blue-500/30 blur-2xl rounded-full"></div>
+                            <img src="images/appzonelk_platform.png" alt="AppZoneLK Platform Icon"
+                                class="relative z-10 w-full h-full object-contain animate-float"
+                                style="animation-delay: 0.5s;">
+                        </div>
+
+                        <div class="flex-1 text-center md:text-left">
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-3 font-display">AppZoneLK Platform
+                            </h3>
+                            <p class="text-slate-400 text-sm md:text-base leading-relaxed mb-6">
+                                A professional business website for software services. Fully responsive design focusing
+                                on SEO and client conversion.
+                            </p>
+                            <a href="https://appzonelk.com"
+                                class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-blue-500/30 text-blue-300 text-sm font-semibold hover:bg-blue-500/10 hover:border-blue-400 transition-all group-hover:gap-3">
+                                VISIT SITE <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Dina Potha -->
+                <div
+                    class="group relative bg-slate-900 rounded-3xl p-1 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-purple-900/20 hover:-translate-y-1">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-green-500/20 via-purple-500/10 to-transparent opacity-100">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-r from-green-900/40 to-slate-900/90 rounded-3xl"></div>
+
+                    <div
+                        class="relative p-8 md:p-10 flex flex-col md:flex-row items-center md:items-start gap-8 h-full">
+                        <div class="w-32 h-32 flex-shrink-0 relative">
+                            <div class="absolute inset-0 bg-green-500/30 blur-2xl rounded-full"></div>
+                            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/notebook-4035930-3342608.png"
+                                alt="Note Icon" class="relative z-10 w-full h-full object-contain animate-float"
+                                style="animation-delay: 1.5s;">
+                        </div>
+
+                        <div class="flex-1 text-center md:text-left">
+                            <h3 class="text-2xl md:text-3xl font-bold text-white mb-3 font-display">Dina Potha</h3>
+                            <p class="text-slate-400 text-sm md:text-base leading-relaxed mb-6">
+                                A utility app designed for daily wage workers to track work records and payments
+                                efficiently.
+                            </p>
+                            <a href="#"
+                                class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-green-500/30 text-green-300 text-sm font-semibold hover:bg-green-500/10 hover:border-green-400 transition-all group-hover:gap-3">
+                                VIEW PROJECT <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="bg-[#050505] py-24 px-[5%]" id="skills">
+        <div class="max-w-[1200px] mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-3 font-display">My Tech Stack</h2>
+                <p class="text-slate-400 text-lg">Technologies I use to build products.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
+                <div
+                    class="group bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/50 hover:bg-slate-800 transition duration-300 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <i class="fab fa-flutter text-4xl text-blue-400 mb-3 block relative z-10"></i>
+                    <span class="font-bold text-slate-300 relative z-10">Flutter</span>
+                </div>
+                <div
+                    class="group bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/50 hover:bg-slate-800 transition duration-300 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <i class="fab fa-react text-4xl text-blue-400 mb-3 block relative z-10"></i>
+                    <span class="font-bold text-slate-300 relative z-10">React.js</span>
+                </div>
+                <div
+                    class="group bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-green-500/50 hover:bg-slate-800 transition duration-300 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-green-500/10 opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <i class="fab fa-node-js text-4xl text-green-500 mb-3 block relative z-10"></i>
+                    <span class="font-bold text-slate-300 relative z-10">Node.js</span>
+                </div>
+                <div
+                    class="group bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-orange-500/50 hover:bg-slate-800 transition duration-300 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <i class="fab fa-html5 text-4xl text-orange-500 mb-3 block relative z-10"></i>
+                    <span class="font-bold text-slate-300 relative z-10">HTML/CSS</span>
+                </div>
+                <div
+                    class="group bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-yellow-500/50 hover:bg-slate-800 transition duration-300 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-yellow-500/10 opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <i class="fas fa-database text-4xl text-yellow-500 mb-3 block relative z-10"></i>
+                    <span class="font-bold text-slate-300 relative z-10">Firebase</span>
+                </div>
+                <div
+                    class="group bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-gray-500/50 hover:bg-slate-800 transition duration-300 relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gray-500/10 opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <i class="fab fa-github text-4xl text-white mb-3 block relative z-10"></i>
+                    <span class="font-bold text-slate-300 relative z-10">Git</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#050505] text-white text-center py-20 px-5 border-t border-slate-800/50">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 font-display">Let's build something great.</h2>
+        <p class="text-slate-400 mb-10 text-lg">Open for freelance projects and collaborations.</p>
+        <a href="mailto:dileeshamadhuranga@gmail.com"
+            class="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-3 rounded-full font-semibold text-lg hover:shadow-lg hover:shadow-purple-600/30 transition-all inline-block">Contact
+            Me</a>
+        <p class="mt-16 text-sm text-slate-500">&copy; 2026 Dileesha. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
